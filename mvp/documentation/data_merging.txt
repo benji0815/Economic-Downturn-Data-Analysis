@@ -6,6 +6,8 @@ All data will be munged to exclude any data before 1985.
 	- Using 5-year data
 
 2. S&P_500_div_yield_month and US_Yield_Curve
+	- Merge S&P_500_div_yield by month and average each month on US_Yield_Curve
+		- We will then have a dataframe of monthly date points for div yield and average monthly yield at same monthly dates
 	- Using 10-year data
 
 3. Gold1MFutures and Copper1MFutures
