@@ -1,0 +1,34 @@
+Merge the following:
+
+All data will be munged to exclude any data before 1985.
+
+1. Corp_Bond_AAA, Corp_Bond_BBB, Corp_Bond_B, and then US_Yield_Curve
+	- Using 5-year data
+
+2. S&P_500_div_yield_month and US_Yield_Curve (10-year data)
+	
+	Part 1:
+	- Merge S&P_500_div_yield by month and US_Yield_Curve by month
+		- This part will be compare monthly data points
+	
+	Part 2:
+	- Merge S&P_500_1M_Futures (daily) with S&P_500_div_yield (monthly)
+		- Calculate the $ dividend yield per month and apply to calculating the S&P daily futures
+			- Goal is to calculate each day's dividend yield % instead of just the month end.
+	- Then merge daily calculated rates with the daily US_Yield_Curve
+
+
+3. Gold1MFutures and Copper1MFutures
+	- Merging the two data frames and adding S&P_500_1M_Futures as an overlay
+
+
+
+Individual Data Sets for Overlays:
+
+1. S&P_500_1M_Futures
+
+2. S&P_500_PE_ratio_month
+
+
+
+*** S&P_500_1M_Futures will be primary overlay for comparison and analysis ***
