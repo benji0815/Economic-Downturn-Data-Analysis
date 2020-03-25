@@ -9,7 +9,7 @@ All data will be munged to exclude any data before 1985.
 	
 	Part 1:
 	- Merge S&P_500_div_yield by month and US_Yield_Curve by month
-		- This part will be compare monthly data points
+		- This part will compare monthly data points
 	
 	Part 2:
 	- Merge S&P_500_1M_Futures (daily) with S&P_500_div_yield (monthly)
